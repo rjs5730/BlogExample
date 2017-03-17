@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8">
+<meta name="OhSeungHyun" content="My hobby"/>
+<meta name="OhSeungHyun" content="rjs5730@gmail.com" />
+
+<link href="/assets/css/main.css" rel="stylesheet" media="screen"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragestart="return false">
+<div class="summary">	
+<xmp>
+base URL 태그 앞에 와서 사진이 붙음
+
+button : 클릭할 수 있는 버튼을 생성합니다. 버튼 안에 text나 이미지 같은 것을 넣을 수 있습니다.
+    예) <button type="button">Click me!</button>
+</xmp>
+<form><button type="button">Click me!</button></form>
+<xmp>
+canvas : 그래픽을 그릴때 사용합니다. 보통 자바 스크립트를 사용합니다.
+예)
+    <canvas id="myCanvas"></canvas>
+
+    <script>   //자바 스크립트 코드
+    var canvas=document.getElementById("myCanvas");
+    var ctx=canvas.getContext("2d");
+    ctx.fillStyle="#FF0000";
+    ctx.fillRect(10,10,80,80);
+    </script>
+</xmp>
+
+<form>
+<canvas id="myCanvas"></canvas>
+<script>   //자바 스크립트 코드
+var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+ctx.fillStyle="#FF0000";
+ctx.fillRect(10,10,80,80);
+</script>
+</form>
+
+<xmp>
+<caption> : 태이블의 캡션을 정의합니다. 테이블 테그 위에 정의합니다.
+예)
+  <table>
+  	<caption>Monthly savings</caption>
+  	<tr>
+  		<th>Month</th>
+  		<th>Savings</th>
+  	</tr>
+  	<tr>
+  		<th>Month</th>
+  		<th>$100</th>
+  	</tr>
+  </table>
+</xmp>
+<form>
+<table>
+    <caption>Monthly savings</caption>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <th>Month</th>
+      <th>$100</th>
+    </tr>
+  </table>
+</form>
+
+<xmp>
+<cite> : 책, 음악, 영화, 티비 와 같은 제목을 정의 할때 쓰입니다.
+예)  <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+여러 폰트 효과를 사용할 수 있습니다.
+예)
+    <em>Emphasized text</em><br>
+    <strong>Strong text</strong><br>
+    <code>A piece of computer code</code><br>
+    <samp>Sample output from a computer program</samp><br>
+    <kbd>Keyboard input</kbd><br>
+    <var>Variable</var>
+</xmp>
+
+<form>
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p><br>
+<em>Emphasized text</em><br>
+<strong>Strong text</strong><br>
+<code>A piece of computer code</code><br>
+<samp>Sample output from a computer program</samp><br>
+<kbd>Keyboard input</kbd><br>
+<var>Variable</var>
+</form>
+
+<xmp>
+<col> : column 특성 <colgroup>의 요소입니다. 테이블 아래에 정의하여 스타일 옵션을 넣스비다
+예) 
+    <table>
+      <colgroup>
+        <col span="2" style="background-color:red">
+        <col style="background-color:yellow">
+      </colgroup>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+      </tr>
+      <tr>
+        <td>5869207</td>
+        <td>My first CSS</td>
+        <td>$49</td>
+      </tr>
+    </table>
+</xmp>
+<form>
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+  </tr>
+</table>
+</form>
+
+<xmp>
+<datalist> : 태그는 이전에 input의 요소를 위해 미리 정의된 옵션을 리스트화 합니다. 자동완성 기능을 제공합니다.
+예)
+    <input list="browsers">
+
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+</xmp>
+<form>
+<input list="browsers">
+
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+</form>
+
+<xmp>
+<dl> <dd> <dt> : 이름과 설명의 리스트를 정의합니다.
+예)
+    <dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+</xmp>
+<form>
+<dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+</form>
+
+<xmp>
+<del> : 글에서 제거되는 효과를 나타냅니다.
+<ins> : 텍스트에 밑줄을 긋습니다.
+예)  <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+<details> : 볼 수 있는것을 숨깁니다. 상호작용 위젯 형태로 클릭을 했을 시 숨겨진 것을 보여줍니다.
+예)
+    <details>
+      <summary>Copyright 1999-2014.</summary>
+      <p> - by Refsnes data. all rights reserved.</p>
+      <p>all content and graphics on this web site are the property of the company</p>
+    </details>
+</xmp>
+<form>
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+<details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes data. all rights reserved.</p>
+  <p>all content and graphics on this web site are the property of the company</p>
+</details>
+</form>
+
+<xmp>
+<dfn> : 용어를 정리하는 스타일로 사용됩니다.
+
+<section> : 문서의 구역을 나눌때 사용합니다.
+예)  <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+</xmp>
+<form><p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p></form>
+
+<xmp>
+<dialog> : 상자의 형태로 유저들에게 보여줍니다.
+예)
+    <table>
+    <tr>
+      <th>January <dialog open>This is an open dialog window</dialog></th>
+      <th>February</th>
+      <th>March</th>
+    </tr>
+    </table>
+</xmp>
+<form>
+<table>
+  <tr>
+    <th>January <dialog open>This is an open dialog window</dialog></th>
+    <th>February</th>
+    <th>March</th>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>28</td>
+    <td>31</td>
+  </tr>
+</table>
+</form>
+
+
+<xmp>
+<div> : html의 파일에 구역을 나누는데 사용합니다. css와 함께 블럭 요소를 지정하는 태그입니다.
+예)
+    <div style="color:#0000FF">
+      <h3>This is a heading</h3>
+      <p>This is a paragraph.</p>
+    </div>
+</xmp>
+<form>
+<div style="color:#0000FF">
+      <h3>This is a heading</h3>
+      <p>This is a paragraph.</p>
+    </div>
+</form>
+
+<xmp>
+<embed> : 플래쉬 이미지를 상호작용할 때 사용합니다.
+예)  <embed src="helloworld.swf">
+
+<fieldset> : 요소를 묶어줄 때 사용합니다.
+<legend> : 요소들의 제목을 나타낼 때 사용합니다.
+예)
+    <form>
+     <fieldset>
+      <legend>Personalia:</legend>
+      Name: <input type="text"><br>
+      Email: <input type="text"><br>
+      Date of birth: <input type="text">
+     </fieldset>
+    </form>
+</xmp>
+<form>
+<form>
+     <fieldset>
+      <legend>Personalia:</legend>
+      Name: <input type="text"><br>
+      Email: <input type="text"><br>
+      Date of birth: <input type="text">
+     </fieldset>
+    </form>
+</form>
+
+
+<xmp>
+<figure> : 내용물(그림,다이어그램, 코드 리스트 기타등등)을 보여줍니다.
+<figcation> : <figure>안의 설명을 넣을 수 있습니다.
+예)
+    <figure>
+      <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+      <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+    </figure>
+
+
+<footer> : 문서의 구역을 정의합니다. 요소의 정보를 포함해야 합니다.
+전형적으로 포함되는 요소
+ . authorship information
+ . copyright information
+ . contact information
+ . sitemap
+ . back to top links
+ . related documents
+
+예)
+    <footer>
+      <p>Posted by: Hege Refsnes</p>
+      <p>Contact information: <a href="mailto:someone@example.com">
+      someone@example.com</a>.</p>
+    </footer>
+</xmp>
+<form>
+<footer>
+      <p>Posted by: Hege Refsnes</p>
+      <p>Contact information: <a href="mailto:someone@example.com">
+      someone@example.com</a>.</p>
+    </footer>
+</form>
+
+<xmp>
+<form> : html input형태를 생성할 때 사용합니다. 하나, 둘 이상의 요소를 가집니다.
+예)
+    <input> 태그 <br>
+
+    <form>
+    	<input type="text" value="text"><br/>
+    	<input type="password" value="password"><br/>
+    	<input type="button" value="button"><br/>
+    	<input type="submit" value="submit"><br/>
+    	<input type="data"><br/>
+    	<input type="radio" value="radio">radio<br/>
+    	<input type="checkbox" value="checkbox">checkbox<br/>
+    	<input type="file"><br/>
+    	<input type="search" value="search"><br/>
+    	<input type="hidden" value="hidden">
+    </form>
+</xmp>
+<form>
+<input> 태그<br>
+
+    <form>
+      <input type="text" value="text".><br/>
+      <input type="password" value="password"><br/>
+      <input type="button" value="button"><br/>
+      <input type="submit" value="submit"><br/>
+      <input type="data"><br/>
+      <input type="radio" value="radio">radio<br/>
+      <input type="checkbox" value="checkbox">checkbox<br/>
+      <input type="file"><br/>
+      <input type="search" value="search"><br/>
+      <input type="hidden" value="hidden">
+    </form>
+</form>
+
+<xmp>
+<h1> ~<h6> 숫자가 작을수록 글의 크기가 커진다.
+
+<head>: 모든 html 문서의 head요소입니다. 모든 문서,scripts,styles를 정의합니다.
+
+<header> : h1 같은 것 포함, logo나 icon, 저자의 정보
+
+<hr> : 분리선을 그릴 때 사용합니다.
+
+<i> : 이태릭 폰트를 사용할 때 씁니다.
+
+
+<iframe> : 화면에 프레임을 추가시킵니다.
+예)
+    <iframe src="https://www.w3schools.com">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+</xmp>
+<form>
+<iframe src="https://www.w3schools.com">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+</form>
+
+<xmp>
+<img> : HTML페이지에 이미지를 넣습니다.
+예)  <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+
+<keygen> 
+예)
+    <form action="/action_page.php" method="get">
+      Username: <input type="text" name="usr_name">
+      Encryption: <keygen name="security">
+      <input type="submit">
+    </form>
+</xmp>
+<form>
+<form action="/action_page.php" method="get">
+  Username: <input type="text" name="usr_name">
+  Encryption: <keygen name="security">
+  <input type="submit">
+</form>
+</form>
+
+
+<xmp>
+<label> : <input>의 요소의 라벨을 정의합니다.
+
+<li> 아이템 리스트를 정의합니다.
+<ol> : 아이템 리스트 앞에 숫자
+<ul> : 점
+
+<link> : 현재와 외부 문서를 연결 시켜줍니다. css 스타일 시트와 연결로 사용됩니다.
+
+<main> : 메인 내용의 문서를 구체화 합니다. 문서에 메인은 1개여야 합니다.
+
+<map> : 클릭할 수 있는 이미지의 맵을 만듭니다.
+예) 
+    <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+      <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+      <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+    </map>
+
+<area> : 이미지맵안의 내용물을 만듭니다. 그 이미지를 클릭하면 href로 이동한다.
+
+<mark> :<mark> 태그는 글자 부분에 노란색으로 하이라이트를 줍니다.
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<meta> : htmll문서의 메타 데이터를 제공합니다.
+	description, keywords, author, viewport 로 제공합니다.
+예)
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+      <meta name="author" content="John Doe">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+<meter> : 스칼라 의 범위를 측정합니다.
+예)
+    <meter value="2" min="0" max="10">2 out of 10</meter><br>
+    <meter value="0.6">60%</meter>
+</xmp>
+<form>
+<meter value="2" min="0" max="10">2 out of 10</meter><br>
+    <meter value="0.6">60%</meter>
+</form>
+<xmp>
+<nav> : 네이비게인션 링크를 정의합니다.
+	내부 문서의 연결시켜주는 것으로 활용합니다.
+예)
+    <nav>
+      <a href="/html/">HTML</a> |
+      <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav>
+</xmp>
+<form>
+<nav>
+      <a href="/html/">HTML</a> |
+      <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav>
+</form>
+
+<xmp>
+<object> 태그는 HTML 문서의 embedded object로 정의합니다.
+	: audio, video, java applets, activeX, PDF, plash같은 멀티미디어 요소를 사용합니다.
+예)  <object width="400" height="400" data="helloworld.swf"></object>
+
+<param> : object의 요소의 파라미터로 정의한다.
+예)
+    <object data="horse.wav">
+      <param name="autoplay" value="true">
+    </object>
+
+
+
+<optgroup> : 안 그룹의 리스트 타이틀을 정의합니다.
+<option> : 선택 리스트 아이템을 추가합니다.
+예)
+    <select>
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+</xmp>
+<form>
+<select>
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+</form>
+
+<xmp>
+<output> : 계산의 결과를 출력합니다.
+<input> :들어오는 타입을 입력합니다.
+예)
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+      <input type="range" id="a" value="50">100
+      +<input type="number" id="b" value="50">
+      =<output name="x" for="a b"></output>
+    </form>
+</xmp>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+      <input type="range" id="a" value="50">100
+      +<input type="number" id="b" value="50">
+      =<output name="x" for="a b"></output>
+    </form>
+
+
+<xmp>
+<p> : 여백을 자동으로 추가합니다.
+
+<picture> : 유동적으로 이미지 소스를 사용합니다. <source> 태그와 <img>태그를 사용할 수 있습니다.
+예)
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+      <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+      <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+<pre> : 넓이가 고정된 폰트(Courier)을 사용하고 공간을 보존합니다.
+
+<progress> : 일의 진행도 등 보여줄때 사용하는 태그입니다.
+예)  <progress value="22" max="100"></progress>
+</xmp>
+<form>
+ <progress value="22" max="100"></progress>
+</form>
+
+<xmp>
+<q> : " (쌍따움표)의 기호를 쓸때 사용합니다.
+
+<rp> : 루비의 텍스트를 제공하기위해 사용합니다.
+<ruby> : 루비를 선언할 때 사용합니다.
+<ruby>
+漢 <rt><rp>(</rp>???<rp>)</rp></rt>
+</ruby>
+
+<s> : 올바른 표현이 아닐때 사용합니다 <del>과 다르게 단어를 대체할 때 사용되지 않습니다.
+
+<small> : 작은 글씨를 나타낼 때
+예) <p><small>Copyright 1999-2050 by Refsnes Data</small></p>
+
+<source> : 미디어의 resource를 구체적으로 사용할 때. <video>,<audio> <picture> 등의 resource
+
+<span> : 사용하는 매크로를 불러서 스타일을 적용시킵니다.
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+<style> : HTML문서를 위한 스타일 정보를 사용합니다. <style> 태그 안에 지정합니다.
+예)
+    <style>
+    h1 {color:red;}
+    p {color:blue;}
+    </style>
+    <h1>A heading</h1>
+    <p>A paragraph.</p>
+</xmp>
+<form>
+<style>
+    h1 {color:red;}
+    p {color:blue;}
+    </style>
+    <h1>A heading</h1>
+    <p>A paragraph.</p>
+</form>
+
+<xmp>
+<sub> <sup> 글자를 기준보다 각각 아래, 위로 사용합니다. like H2O.
+
+<table> : 테이블을 생성합니다.
+예)
+    <table>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+    </table>
+</xmp>
+<form>
+<table>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+    </table>
+</form>
+
+<xmp>
+<video> : 비디오 태그를 정의할 때 사용합니다.
+
+</xmp>
+
+</div>
+
+	<div class="footer"></div>
+
+</body>
+</html>

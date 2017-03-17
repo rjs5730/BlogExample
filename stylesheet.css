@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header {
+  height: 100px;
+  background-image:none;
+  font-family:"Helvetica";
+  float:none;
+  
+}
+.header-left {
+	font-size: 30px;
+	margin:0px auto;
+	margin-top: 0px;
+}
+
+.topMenu {
+height: 30px;
+width: 850px;
+margin:0 auto;
+padding : 25px;
+font-family:"Helvetica";
+
+}
+
+.topMeun ul {
+	width:1020px; margin:0px auto; padding:0px;
+	font-family:"Helvetica";
+}
+
+.topMenu ul li {
+
+	list-style: none;
+	color: black;
+	background-color: white;
+	float: left;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	font-family:"Helvetica";
+}
+
+.topMenu .menuLink {
+	text-decoration:none;
+	color: black;
+	display: block;
+	width: 150px;
+	font-size: 17px;
+	font-weight: bold;
+	font-family:"Helvetica";
+}
+.topMenu .menuLink:hover {
+color: red;
+background-color: #4d4d4d;
+font-family:"Helvetica";
+}
+
+.contents {
+	height: 600px;
+	margin:40 auto;
+	text-align:center;	
+	font-family:"Helvetica";
+	clear: both;
+}
+
+.footer {
+	height: 200px;
+	margin:0 auto;
+	clear: both;
+}
